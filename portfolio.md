@@ -8,13 +8,13 @@ Some of my finer published accomplishments:
 ## Documentation:
 
 * Server Profiles Roadmap (Knowledge Base Article)
-  * [markdown](/assets/img/SPR.md)
-  * [PDF](./assets/img/SPR.pdf)
+  * [markdown](/portfolio/SPR.md)
+  * [PDF](/portfolio/SPR.pdf)
   * [Public URL](https://docs.cpanel.net/knowledge-base/general-systems-administration/server-profiles-roadmap/) (live)
 
 * Link Server Nodes (User Interface Document)
-  * [markdown](../assets/img/LSN.md)
-  * [PDF](assets/img/LSN.pdf)
+  * [markdown](/portfolio/LSN.md)
+  * [PDF](/portfolio/LSN.pdf)
   * [Public URL](https://docs.cpanel.net/whm/server-configuration/link-server-nodes/) (live)
 
 * Example 1 (OAPI Spec)
