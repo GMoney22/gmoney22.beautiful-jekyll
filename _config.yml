@@ -14,7 +14,6 @@ author: Garrett Griffith
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
   Portfolio: "portfolio"
   Resume: "resume"
   Cover Letter: "coverletter"
