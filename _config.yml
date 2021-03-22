@@ -18,7 +18,7 @@ navbar-links:
   Portfolio: "portfolio"
   Resume: "resume"
   Cover Letter: "coverletter"
-  Author's home: "https://garrettg.me"
+#  Author's home: "https://garrettg.me"
 
 # --- Logo --- #
 
