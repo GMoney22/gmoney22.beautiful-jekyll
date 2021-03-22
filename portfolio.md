@@ -8,8 +8,8 @@ Some of my finer published accomplishments:
 ## Documentation:
 
 * Server Profiles Roadmap (Knowledge Base Article)
-  * [markdown](assets/img/SPR.md)
-  * [PDF](assets/img/SPR.pdf)
+  * [markdown](/assets/img/SPR.md)
+  * [PDF](./assets/img/SPR.pdf)
   * [Public URL](https://docs.cpanel.net/knowledge-base/general-systems-administration/server-profiles-roadmap/) (live)
 
 * Link Server Nodes (User Interface Document)
