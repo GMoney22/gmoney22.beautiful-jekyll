@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 ---
-![PDF](assets/img/Garrett_Griffith_Resume.pdf)
+[PDF](assets/img/Garrett_Griffith_Resume.pdf)
 
 ## Experience
 **Jan 2020 – Present**
@@ -38,6 +38,7 @@ BA: Philosophy Minor: Business
  ![image](https://user-images.githubusercontent.com/27425806/111934476-7acace80-8a8f-11eb-981f-e8153d3a33a9.png)
 
 ## Software
+
 | OS      | Content     | Media    |
 |---------|-------------|----------|
 | macOS   | Hugo        | Camtasia |
