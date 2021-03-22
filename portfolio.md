@@ -32,20 +32,20 @@ Some of my finer published accomplishments:
 
 * SSH Access
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CCX0mMaEEKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`https://youtu.be/CCX0mMaEEKc`
+[`https://youtu.be/CCX0mMaEEKc`](https://youtu.be/CCX0mMaEEKc)
 
 * Domains
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rikUyY3YKmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`https://youtu.be/rikUyY3YKmU`
+[`https://youtu.be/rikUyY3YKmU`](https://youtu.be/rikUyY3YKmU)
 
 * Manage API Tokens
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_l2xWyFPnNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`https://youtu.be/_l2xWyFPnNg`
+[`https://youtu.be/_l2xWyFPnNg`](https://youtu.be/_l2xWyFPnNg)
 
 * Spam Filters
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YixhMPdcHQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`https://youtu.be/YixhMPdcHQw`
+[`https://youtu.be/YixhMPdcHQw`](https://youtu.be/YixhMPdcHQw)
 
 * Terminal
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hOn9EZ7yuVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`https://youtu.be/hOn9EZ7yuVo`
+[`https://youtu.be/hOn9EZ7yuVo`](https://youtu.be/hOn9EZ7yuVo)
