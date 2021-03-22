@@ -13,7 +13,7 @@ Some of my finer published accomplishments:
   * [Public URL](https://docs.cpanel.net/knowledge-base/general-systems-administration/server-profiles-roadmap/) (live)
 
 * Link Server Nodes (User Interface Document)
-  * [markdown]((assets/img/LSN.md)
+  * [markdown](../assets/img/LSN.md)
   * [PDF](assets/img/LSN.pdf)
   * [Public URL](https://docs.cpanel.net/whm/server-configuration/link-server-nodes/) (live)
 
