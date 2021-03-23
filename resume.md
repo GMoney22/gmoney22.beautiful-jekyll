@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 ---
-[PDF](assets/img/Garrett_Griffith_Resume.pdf)
+[Link to PDF ↗️](assets/img/Garrett_Griffith_Resume.pdf)
 
 ## Experience
 **Jan 2020 – Present**
