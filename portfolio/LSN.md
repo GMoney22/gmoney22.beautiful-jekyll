@@ -1,4 +1,8 @@
-```
+---
+layout: page
+title: Link Server Nodes markdown
+---
+```md
 {
     "title": "Link Server Nodes",
     "description": "This interface allows you to create linkages from this server to another server.",
