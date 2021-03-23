@@ -39,8 +39,10 @@ BA: Philosophy Minor: Business
 
 ## Software
 
-| OS      | Content     | Media    |
-|---------|-------------|----------|
-| macOS   | Hugo        | Camtasia |
-| Linux   | Atlassian   | iMovie   |
-| Windows | OmniGraffle | Audacity |
+| OS      | Content     | Media      |
+|---------|-------------|------------|
+| macOS   | Hugo        | Camtasia   |
+| Linux   | Atlassian   | iMovie     |
+| Ubuntu  | GitLab      | OmniGraffle|
+| Windows | VSCode      | Audacity   |
+
