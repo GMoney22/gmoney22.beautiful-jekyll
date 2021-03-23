@@ -7,20 +7,20 @@ Some of my finer published accomplishments:
 
 ## Documentation:
 
-* Server Profiles Roadmap **Knowledge Base Article**
-  * [markdown](/portfolio/SPR.md)
-  * [PDF](/portfolio/SPR.pdf)
-  * [Public URL](https://docs.cpanel.net/knowledge-base/general-systems-administration/server-profiles-roadmap/) (live)
+* cPanel Linked Nodes Roadmap **Knowledge Base Article**
+  * [markdown](/portfolio/LNR.md)
+  * [PDF](/portfolio/LNR.pdf)
+  * [Public URL](https://docs.cpanel.net/knowledge-base/general-systems-administration/cpanel-linked-nodes-roadmap/)
 
 * Link Server Nodes **User Interface Document**
   * [markdown](/portfolio/LSN.md)
   * [PDF](/portfolio/LSN.pdf)
-  * [Public URL](https://docs.cpanel.net/whm/server-configuration/link-server-nodes/) (live)
+  * [Public URL](https://docs.cpanel.net/whm/server-configuration/link-server-nodes/)
 
 * Install SSL **OAPI Spec**
   * [markdown](/portfolio/SSL.yaml)
   * [PDF](/portfolio/SSL.pdf)
-  * [Public URL](https://api.docs.cpanel.net/openapi/whm/operation/installssl/) (live)
+  * [Public URL](https://api.docs.cpanel.net/openapi/whm/operation/installssl/)
 
 * Add Email Account **Quick Start Guide**
   * [Pet Project](https://gmoney22.github.io/add-email/)
