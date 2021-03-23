@@ -2,7 +2,7 @@
 layout: page
 title: cPanel Linked Nodes Roadmap markdown
 ---
-```
+```md
 {
     "title": "cPanel Linked Nodes Roadmap",
     "description": "You can offload certain functionality to a linked server.",
