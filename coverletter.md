@@ -2,7 +2,7 @@
 layout: page
 title: Cover Letter
 ---
-[PDF](assets/img/Garrett_Griffith_Cover_Letter.pdf)
+[Link to PDF ↗️](assets/img/Garrett_Griffith_Cover_Letter.pdf)
 
 #### To My Future Manager,
 
