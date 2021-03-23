@@ -2,7 +2,7 @@
 layout: page
 title: Install SSL OpenAPI Spec File
 ---
-```yaml
+```yml
 components:
   schemas: {}
   securitySchemes:
