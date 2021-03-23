@@ -1,4 +1,4 @@
-https://GarrettG.me
+## https://GarrettG.me
 
 Yay! A website all about me! It is about time :)
 
