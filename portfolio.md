@@ -18,7 +18,7 @@ Some of my finer published accomplishments:
   * [Public URL](https://docs.cpanel.net/whm/server-configuration/link-server-nodes/)
 
 * Install SSL **OAPI Spec**
-  * [markdown](/portfolio/SSL.yaml)
+  * [markdown](/portfolio/SSL.md)
   * [PDF](/portfolio/SSL.pdf)
   * [Public URL](https://api.docs.cpanel.net/openapi/whm/operation/installssl/)
 
