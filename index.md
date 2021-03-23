@@ -13,7 +13,7 @@ subtitle: Tech Writer for hire
 * **Interests**: Fathering, Gaming, inconsistently exercising
 * **Moto**: Go BIG or go home!
 
-I like to create videos, tutorials, and explain complex things in simple ways. It is like solving a puzzle. 
+I like to create [videos](portfolio/#videos), [tutorials](portfolio/#documentation), and explain complex things in simple ways. It is like solving a puzzle. 
 
 I tend to see the best in people, even when they can't see it in themselves. 
 
