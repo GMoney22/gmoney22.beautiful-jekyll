@@ -6,8 +6,6 @@ subtitle: Tech Writer for hire
 
 <br>
 <br>
-<br>
-<br>
 
 * **Name**: Garrett Griffith
 * **Species**: Human, **definitely** not a robot
