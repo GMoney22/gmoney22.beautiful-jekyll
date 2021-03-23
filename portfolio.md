@@ -17,7 +17,7 @@ Some of my finer published accomplishments:
   * [PDF](/portfolio/LSN.pdf)
   * [Public URL](https://docs.cpanel.net/whm/server-configuration/link-server-nodes/) (live)
 
-* Example 1 **OAPI Spec**
+* Install SSL **OAPI Spec**
   * [markdown](/portfolio/SSL.yaml)
   * [PDF](/portfolio/SSL.pdf)
   * [Public URL](https://api.docs.cpanel.net/openapi/whm/operation/installssl/) (live)
