@@ -11,18 +11,6 @@ components:
       type: http
 externalDocs:
   url: https://cpanel.net/developers/
-info:
-  contact:
-    email: cs@cpanel.net
-    name: cPanel L.L.C.
-    url: https://cpanel.net/support/
-  description: WHM API.
-  license:
-    name: cPanel License
-    url: https://cpanel.net/legal-notices/
-  termsOfService: https://cpanel.net/legal-notices/
-  title: WHM API
-  version: 11.89.0.9999
 openapi: 3.0.2
 paths:
   /installssl:
@@ -36,7 +24,6 @@ paths:
         required: true
         schema:
           example: example.com
-          format: domain
           type: string
       - description: |-
           The certificate's text.
@@ -44,7 +31,6 @@ paths:
           **Note:**
 
           You **must** URI-encode this value.
-        in: query
         name: crt
         required: true
         schema:
@@ -56,7 +42,6 @@ paths:
           **Note:**
 
           You **must** URI-encode this value.
-        in: query
         name: key
         required: true
         schema:
@@ -71,7 +56,6 @@ paths:
           **Note:**
 
           You **must** URI-encode this value.
-        in: query
         name: cab
         required: false
         schema:
@@ -81,12 +65,10 @@ paths:
           The IP address of the certificate's domain.
 
           This parameter defaults to the domain's local IP address.
-        in: query
         name: ip
         required: false
         schema:
           example: 192.168.0.20
-          format: ipv4
           type: string
       responses:
         '200':
@@ -108,14 +90,12 @@ paths:
                         - mail.example.com
                         - subdomain.example.com
                         items:
-                          format: domain
                           type: string
                         type: array
                       domain:
                         description: The domain on which the function installed the
                           SSL certificate.
                         example: example.com
-                        format: domain
                         type: string
                       extra_certificate_domains:
                         description: A list of domains that possess additional SSL
@@ -124,7 +104,6 @@ paths:
                         - mail.example.com
                         - subdomain.example.com
                         items:
-                          format: domain
                           type: string
                         type: array
                       html:
@@ -137,7 +116,6 @@ paths:
                       ip:
                         description: The domain's IP address.
                         example: 192.168.0.20
-                        format: ipv4
                         type: string
                       message:
                         description: A message of success or a reason for failure.
@@ -148,7 +126,6 @@ paths:
                       servername:
                         description: The server's hostname.
                         example: example.com
-                        format: hostname
                         type: string
                       status:
                         description: |-
@@ -171,14 +148,12 @@ paths:
                         description: The username for the account on which the function
                           installed the SSL certificate.
                         example: username
-                        format: username
                         type: string
                       warning_domains:
                         description: A list of domains associated with the main domain
                           on which the function did **not** install the SSL certificate.
                         items:
                           example: subdomain.example.com
-                          format: domain
                           type: string
                         type: array
                       working_domains:
@@ -188,7 +163,6 @@ paths:
                         - example.com
                         - mail.example.com
                         items:
-                          format: domain
                           type: string
                         type: array
                     type: object
@@ -231,16 +205,6 @@ paths:
       tags:
       - SSL
       - cPanel Account Settings
-      x-code-samples:
-      - label: CLI
-        lang: Shell
-        source: whmapi1 installssl domain='example.com' crt='-----BEGIN%20CERTIFICATE-----%0AMIIDNTCCAh2gAwIBAgIFAY0o0kwwDQYJKoZIhvcNAQELBQAwFjEUMBIGA1UEAwwL%0AZG9tYWluLnRlc3QwHhcNMTcxMDMxMTUyMjU1WhcNMTgxMDMxMTUyMjU1WjAWMRQw%0AEgYDVQQDDAtkb21haW4udGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC%0AggEBALer6vzwFt%2BO6ooHcXpq%2Bi%2FOVVQEY3oWxrqH6mB%2FPssVSxwcf6bLjoO4so%2Fn%0Adrymhb9mqfkOqYVHwnQ%2Fh2uM%2BIw1NKKDfwOljWcgCS24NykbfQUlW%2FSNDTovdDGl%0AT1Aner090Qse%2B19ta8KS%2F3Akz37bkgqMkPO%2FiEOHlF%2FLbLvjfighkoGco51wc6d7%0AHCQwPWR%2BUenbQWzUwR4%2F4Pqw%2FYrxDAv8O%2FEnNfOGwnCnlnFq4a390VGriqMAngzI%0AlRMVDu4qJGW3dFNStVUm71%2B16ba%2FeIVBQGN2rbgie6Rb6VuHdsqSreea0tSLRxdd%0AFd7A0QMQRvtnqoUv6RZBhefr2t0CAwEAAaOBiTCBhjAdBgNVHQ4EFgQUeitnD4U4%0AMXtmLX53dTAZPENjovwwHwYDVR0jBBgwFoAUeitnD4U4MXtmLX53dTAZPENjovww%0ACQYDVR0TBAIwADA5BgNVHREEMjAwggtkb21haW4udGVzdIIQbWFpbC5kb21haW4u%0AdGVzdIIPd3d3LmRvbWFpbi50ZXN0MA0GCSqGSIb3DQEBCwUAA4IBAQAeD4Fc%2FBwM%0AfJEvlPO30%2FOp2JJxG92tbgsoY9CKTYoZy0IMHhwOrt%2FB36joYDrOhtiO6XsRw4Zm%0AAPT8ey9p61kUc6XWs5oU9aifKeAKzWCZV9wQphbY%2F0rQp1YPsVN9tBgiag754HPo%0AbNDhWOZSZDKnh82DikTD6iciTxeblrvcbFC4Z76JH31dvqmNMEAgZvPCpq86Ued5%0A52gKM0u2%2BrK%2FzIYjh%2FhooqN%2BTY%2BJQ667JzLzPNenzAYFsoIQgVj6%2FZoFqJA4nbxC%0Azv%2Fspqc0OQ2W9m5egRPDhngKt%2Bi9804N7FeilBL%2FcpEgUHhgzMBi1T9n%2BYBrc6bO%0AjNjvnEQRbqZY%0A-----END%20CERTIFICATE-----'
-          key='-----BEGIN%20RSA%20PRIVATE%20KEY-----%0AMIIEpAIBAAKCAQEA4AVM6J4Qg3DIFWr/eJ5GRmIATYsJIepKbrDy70sq+udcO8R8xxak0oMZ/9mUdpjSNK/fLVTuCO0kxTfQ9VUWJllX7ThD6Zh9ZvlC/nf/OEZLm3ZbnBgu8rbC8E9wuDOkKbJLnINgdhtowIydLK2MJ++q62bFV89jkHWTMcKyyqHENo3hc+lkpd9vnp8rZTinaVb7nX26uQqAFZYRo+WU0G/NPsq40QVSMoqPxyEz4qXo0hvuIlCXmzFZq/6fCVPEKPLhQgMmpdBkMz4dVOazREfqXdjMD2+QXSNiA1AwWr8l0r4rtzlxEYDJIR41yXp0xMl3KoolxMyvLBqZy32niQIDAQABAoIBAQCmbGmhWmPsMeoCt1WJFxQgD4goE0U6k+Kt7vjbOt14Pk6v/B2yjaju1wSGpO59WLS4/XrwI2se6IXrmba7u3VUEgWXLriNHoLy7/SMNTs+ZEKhAMG36eNe3tVdT7busTag31r6sEMGGwCsIwpU+azosk0oylWLEX/m/uHWEs1eaIEWWWtgHB+KZrrP7Rr9RYfVQ144DxmOxS3Ca9+mST62WqAVPR6POWGEfZqnZl/ePWZPcQYbFrhwnnefNoYBl/bnLZBo8rbNWxAqOEOuKfkrBzglKG/39WKPw8rj4JIVzY0yOuFCW6xCDWRkOrhU8Ol/3FvwDa3uJpkpmgPr4TgxAoGBAPGPLmxSuOYR97mDAXxrs037F2GCbqWvI6m7/ezWe9yn+bMpjSIWfsgtq4FsyqzPueEkDdQWi3xh6nu2WI/1Tl875opGAqEIJMqss/u11tnva5wzu1cCL6H85A5+HMOBvP3sm6CObKcVw92h7kxynVIUJJWhjfeZMN8gBFFpKIVFAoGBAO1ptXBmXLC/YKKvtHI3M16/ZopvM8ZqU2HcAHaw214Refw9JJ/e3/xTNfSerVTyCAQO1AdWTzJKBN8jmSYv1Mk1D3RpQPNR7wVzi46KR081AU41uMpqIGVOwHtyVnW/ZfLrc1DLIK8Cx8aHfoxffwzoMO5SEQSooeZfOLhsfDN1AoGBAKQTUEINsj+75psgbAr6ELGgItJ9yPBLVRr+cUzEpx9LDWVvjMihpP4NX1gq8EOPWT+ewLHVmmsjCyV6xw8JXXF8e2xif3in0m3D/wCzE7u2T06rKM3B017hKnrZmGoHnrqPU2osM4sOUpshWX6dv1Q4EF1+fbK3YCW+VpCBsB9NAoGAQo+uhNLODee56iKkzpjXWCsFTq6ar3hD5F3P63buKdNwhd2GlSPhXFbf+7M5GWW6BZk6rMvv7EOAVice2uvyFm8/4/1WbmF8R+T7LX1rPLO5p/m701QpvP11TabiwqRkqtSEQhSRF0AKTojSW/yyHCZFAawUhV/Z9EKiHmKb97kCgYAyzmFc2it0HqnsOnRybop603nqMtWGTQO4cxa93HUDpYajuK2K3DfrxUj6lG3z/oKJGGE2JqgZ6LBAhNJtJWJu2ox3pKGE63QjLJnVwb8y1NFYpe/crbLePuBwIR0L7drXxfv7O5btY7h6QI2d1/UIAQPAWbxLoTM+ndQ/uPEdfA%3D%3D-----END%20RSA%20PRIVATE%20KEY-----'
-      - label: URL
-        lang: HTTP
-        source: https://hostname.example.com:2087/cpsess##########/json-api/installssl?api.version=1&domain=example.com&crt=-----BEGIN%2520CERTIFICATE-----%250AMIIDNTCCAh2gAwIBAgIFAY0o0kwwDQYJKoZIhvcNAQELBQAwFjEUMBIGA1UEAwwL%250AZG9tYWluLnRlc3QwHhcNMTcxMDMxMTUyMjU1WhcNMTgxMDMxMTUyMjU1WjAWMRQw%250AEgYDVQQDDAtkb21haW4udGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC%250AggEBALer6vzwFt%252BO6ooHcXpq%252Bi%252FOVVQEY3oWxrqH6mB%252FPssVSxwcf6bLjoO4so%252Fn%250Adrymhb9mqfkOqYVHwnQ%252Fh2uM%252BIw1NKKDfwOljWcgCS24NykbfQUlW%252FSNDTovdDGl%250AT1Aner090Qse%252B19ta8KS%252F3Akz37bkgqMkPO%252FiEOHlF%252FLbLvjfighkoGco51wc6d7%250AHCQwPWR%252BUenbQWzUwR4%252F4Pqw%252FYrxDAv8O%252FEnNfOGwnCnlnFq4a390VGriqMAngzI%250AlRMVDu4qJGW3dFNStVUm71%252B16ba%252FeIVBQGN2rbgie6Rb6VuHdsqSreea0tSLRxdd%250AFd7A0QMQRvtnqoUv6RZBhefr2t0CAwEAAaOBiTCBhjAdBgNVHQ4EFgQUeitnD4U4%250AMXtmLX53dTAZPENjovwwHwYDVR0jBBgwFoAUeitnD4U4MXtmLX53dTAZPENjovww%250ACQYDVR0TBAIwADA5BgNVHREEMjAwggtkb21haW4udGVzdIIQbWFpbC5kb21haW4u%250AdGVzdIIPd3d3LmRvbWFpbi50ZXN0MA0GCSqGSIb3DQEBCwUAA4IBAQAeD4Fc%252FBwM%250AfJEvlPO30%252FOp2JJxG92tbgsoY9CKTYoZy0IMHhwOrt%252FB36joYDrOhtiO6XsRw4Zm%250AAPT8ey9p61kUc6XWs5oU9aifKeAKzWCZV9wQphbY%252F0rQp1YPsVN9tBgiag754HPo%250AbNDhWOZSZDKnh82DikTD6iciTxeblrvcbFC4Z76JH31dvqmNMEAgZvPCpq86Ued5%250A52gKM0u2%252BrK%252FzIYjh%252FhooqN%252BTY%252BJQ667JzLzPNenzAYFsoIQgVj6%252FZoFqJA4nbxC%250Azv%252Fspqc0OQ2W9m5egRPDhngKt%252Bi9804N7FeilBL%252FcpEgUHhgzMBi1T9n%252BYBrc6bO%250AjNjvnEQRbqZY%250A-----END%2520CERTIFICATE-----&key=-----BEGIN%2520RSA%2520PRIVATE%2520KEY-----%250AMIIEpAIBAAKCAQEA4AVM6J4Qg3DIFWr%2feJ5GRmIATYsJIepKbrDy70sq%2budcO8R8xxak0oMZ%2f9mUdpjSNK%2ffLVTuCO0kxTfQ9VUWJllX7ThD6Zh9ZvlC%2fnf%2fOEZLm3ZbnBgu8rbC8E9wuDOkKbJLnINgdhtowIydLK2MJ%2b%2bq62bFV89jkHWTMcKyyqHENo3hc%2blkpd9vnp8rZTinaVb7nX26uQqAFZYRo%2bWU0G%2fNPsq40QVSMoqPxyEz4qXo0hvuIlCXmzFZq%2f6fCVPEKPLhQgMmpdBkMz4dVOazREfqXdjMD2%2bQXSNiA1AwWr8l0r4rtzlxEYDJIR41yXp0xMl3KoolxMyvLBqZy32niQIDAQABAoIBAQCmbGmhWmPsMeoCt1WJFxQgD4goE0U6k%2bKt7vjbOt14Pk6v%2fB2yjaju1wSGpO59WLS4%2fXrwI2se6IXrmba7u3VUEgWXLriNHoLy7%2fSMNTs%2bZEKhAMG36eNe3tVdT7busTag31r6sEMGGwCsIwpU%2bazosk0oylWLEX%2fm%2fuHWEs1eaIEWWWtgHB%2bKZrrP7Rr9RYfVQ144DxmOxS3Ca9%2bmST62WqAVPR6POWGEfZqnZl%2fePWZPcQYbFrhwnnefNoYBl%2fbnLZBo8rbNWxAqOEOuKfkrBzglKG%2f39WKPw8rj4JIVzY0yOuFCW6xCDWRkOrhU8Ol%2f3FvwDa3uJpkpmgPr4TgxAoGBAPGPLmxSuOYR97mDAXxrs037F2GCbqWvI6m7%2fezWe9yn%2bbMpjSIWfsgtq4FsyqzPueEkDdQWi3xh6nu2WI%2f1Tl875opGAqEIJMqss%2fu11tnva5wzu1cCL6H85A5%2bHMOBvP3sm6CObKcVw92h7kxynVIUJJWhjfeZMN8gBFFpKIVFAoGBAO1ptXBmXLC%2fYKKvtHI3M16%2fZopvM8ZqU2HcAHaw214Refw9JJ%2fe3%2fxTNfSerVTyCAQO1AdWTzJKBN8jmSYv1Mk1D3RpQPNR7wVzi46KR081AU41uMpqIGVOwHtyVnW%2fZfLrc1DLIK8Cx8aHfoxffwzoMO5SEQSooeZfOLhsfDN1AoGBAKQTUEINsj%2b75psgbAr6ELGgItJ9yPBLVRr%2bcUzEpx9LDWVvjMihpP4NX1gq8EOPWT%2bewLHVmmsjCyV6xw8JXXF8e2xif3in0m3D%2fwCzE7u2T06rKM3B017hKnrZmGoHnrqPU2osM4sOUpshWX6dv1Q4EF1%2bfbK3YCW%2bVpCBsB9NAoGAQo%2buhNLODee56iKkzpjXWCsFTq6ar3hD5F3P63buKdNwhd2GlSPhXFbf%2b7M5GWW6BZk6rMvv7EOAVice2uvyFm8%2f4%2f1WbmF8R%2bT7LX1rPLO5p%2fm701QpvP11TabiwqRkqtSEQhSRF0AKTojSW%2fyyHCZFAawUhV%2fZ9EKiHmKb97kCgYAyzmFc2it0HqnsOnRybop603nqMtWGTQO4cxa93HUDpYajuK2K3DfrxUj6lG3z%2foKJGGE2JqgZ6LBAhNJtJWJu2ox3pKGE63QjLJnVwb8y1NFYpe%2fcrbLePuBwIR0L7drXxfv7O5btY7h6QI2d1%2fUIAQPAWbxLoTM%2bndQ%2fuPEdfA%253D%253D-----END%2520RSA%2520PRIVATE%2520KEY-----
-      x-cpanel-api-version: WHM API 1
-      x-cpanel-available-version: '11.32'
 security:
 - BasicAuth: []
 servers:
@@ -258,8 +222,4 @@ tags:
   name: SSL
 - description: SSL Certificates / cPanel Account Settings
   name: cPanel Account Settings
-x-tagGroups:
-- name: SSL Certificates
-  tags:
-  - cPanel Account Settings
 ```
